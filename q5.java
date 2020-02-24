@@ -7,7 +7,7 @@ public class q5 {
 	public static void main(String[] args) {
 		for(int i=1;i>=0;i++) {
 			if(isdivisiable(i)) {
-				System.out.println( "the smallest positive number that is evenly divisible by all of the numbers from 1 to 20  "+i);
+				System.out.println(i);
 				break;
 			}
 		}
