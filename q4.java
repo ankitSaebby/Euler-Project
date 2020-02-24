@@ -14,7 +14,7 @@ public class q4 {
 						max=n;
 				}
 			}
-		System.out.println("the max product of two three digit no. is "+max);
+		System.out.println(max);
 	}
 
 	private static boolean isPallin(int n) {
