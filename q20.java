@@ -5,25 +5,26 @@ and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 
 Find the sum of the digits in the number 100!*/
 
+import java.math.BigInteger;
 public class q20 {
 		public static void main(String args[]) {
-			double a= getFact(100);
-			int sum = 0, r;
-		    while( a!= 0 )
+			BigInteger f= getFact(100);
+			BigInteger a= new BigInteger("10");
+			BigInteger r= new BigInteger("1");
+			BigInteger sum=new BigInteger("0");
+		    while(a.compareTo(r)>0)
 		    {
-		        r=(int)a% 10;
-		        sum=sum+r;
-		        a/= 10;
+		    	r=f.remainder(a);
+	    		sum=sum.add(r);
+	    		f=f.divide(a);
 		    }
-		    System.out.println("the sum of the digits in the number 100!  "+sum);
+		    System.out.println(sum);
 		}
-		public static double getFact(int n) {
-			double fact=1;
-			while(n!=0) {
-				fact=fact*n;
-				n--;
-			}
-			return fact;
-		}
-
+		public static BigInteger getFact(int n) {
+	        BigInteger fact = new BigInteger("1");
+	        for(int i=2;i<=n;i++) {
+	            fact= fact.multiply(BigInteger.valueOf(i));
+	        }
+	        return fact;}
 }
+	    
