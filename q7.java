@@ -15,6 +15,6 @@ public class q7 {
 				i++;
 			}n+=2;
 		}
-		System.out.println("the 10001th prime no will be  "+(n-2));
+		System.out.println((n-2));
 	}
 }
