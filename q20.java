@@ -12,7 +12,7 @@ public class q20 {
 			BigInteger a= new BigInteger("10");
 			BigInteger r= new BigInteger("1");
 			BigInteger sum=new BigInteger("0");
-		    while(a.compareTo(r)>0)
+		    while(f.compareTo(r)>0)
 		    {
 		    	r=f.remainder(a);
 	    		sum=sum.add(r);
