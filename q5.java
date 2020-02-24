@@ -5,7 +5,7 @@
 public class q5 {
 
 	public static void main(String[] args) {
-		for(int i=1;i>=0;i++) {
+		for(int i=20;i>=1;i+=20) {
 			if(isdivisiable(i)) {
 				System.out.println(i);
 				break;
