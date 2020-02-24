@@ -15,7 +15,7 @@ public class q9 {
 			{
 				a=1000-b-c;
 				if(a*a==b*b+c*c){
-					System.out.println("the product of the perfect Pythagorean triplet   "+(a*b*c));
+					System.out.println((a*b*c));
 				}
 			}
 
