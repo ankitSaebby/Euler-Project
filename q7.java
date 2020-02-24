@@ -5,16 +5,16 @@
 
 public class q7 {
 	public static void main(String args[]) {
-		int n=2,i=0,p = 0;
-		while(i<=10001) { int c=0;
-			for(int j=2;j<=10001;j++)
+		int n=3,i=1;
+		while(i<10001) { int c=0;
+			for(int j=3;j<=n/2;j+=2) {
 				if(n%j==0)
-					c++;
+				{	c++;break;}}
 			if(c==0)
 			{
-				i++;p=n;
-			}n++;
+				i++;
+			}n+=2;
 		}
-		System.out.println("the 10001th prime no will be  "+p);
+		System.out.println("the 10001th prime no will be  "+(n-2));
 	}
 }
