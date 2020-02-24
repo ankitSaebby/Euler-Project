@@ -8,7 +8,7 @@ public class q1 {
 		for(int i=3;i<1000;i++) {
 			if(i%3==0||i%5==0)
 				s=s+i;
-		}System.out.println("the sum of all the natural nos divisiable by 3 or 5 till 1000    "+s);
+		}System.out.println(s);
 
 	}
 
