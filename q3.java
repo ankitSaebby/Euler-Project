@@ -5,14 +5,18 @@
 public class q3 {
 
 	public static void main(String[] args) {
-		 double n=600851475143.0;double max=0;
-		for(double i=2;i<Math.sqrt(n);i++) {
+		 double n=600851475143.0;double max=0; int c=0,s = 0;
+		for(int i=2;i<=Math.sqrt(n);i++) {
 			if(n%i==0) {
-				if(i>max)
-					max=i;
-			}
-		}System.out.println((int)max);
+				if(i>1) {
+					for(int j=2;j<=i/2;j++) {
+						if(i%j==0)
+							c++;
+					}if(c==0)
+						s=i;
+				}
+		}
 
+	}System.out.println(s);
 	}
-
 }
