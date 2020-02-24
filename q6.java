@@ -16,6 +16,6 @@ public class q6 {
 		}
 		s2=s2*s2;
 		int diff=s2-s1;
-		System.out.println("the difference between the two   "+diff);
+		System.out.println(diff);
 	}
 }
